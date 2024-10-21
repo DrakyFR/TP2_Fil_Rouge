@@ -1,54 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
-
-body{
-    background-color: rgb(48, 42, 42);
-    font-family: ;
+body {
+    background-color: #041821;  /* Mettre le fond de site en noir */
+    font-family: "Yeseva One";   /*Mettre la police Yeseva One sur tout les textes sauf si il le texte possède déjà un balise*/
+    margin: 0;             
+    padding: 0;            /*Mettre un ligne complète sur tout l'entête*/
 
 }
 
-span{
-    color : rgb(37, 226, 163) ;
+
+header {                                                      /*La balise de l'entête*/
+    border-bottom: 2px solid rgb(124, 126, 128);  
+    color: aliceblue;                               
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h3{
-    color: aliceblue;
-    border-bottom: 2px solid rgb(124, 126, 128);
+
+.ez{
+    color: #1bd79e;
 }
 
-h1{
-    color: aliceblue;
+h3 {
+    color: #e5e5e5e5;
+}
+
+
+h1 {
+    color: #e5e5e5e5;
     margin: 0px 100px;
 }
 
-h5{
-    color: rgb(124, 126, 128);
+h5 {
+    color: #808080;
     margin: 0px 100px;
+    font-family: "Montserrat";
 }
 
-ul{
+ul {
     padding: 0;
     width: 100%;
+    font-family: "Montserrat";
 }
 
-li{
-    color: aliceblue;
-    display: inline;
-}
-
-ul li:hover{
-    background: rgb(37, 226, 163);
-    
-}
-
-a {
-    outline: none;
-    text-decoration: none;
-    display: inline-block;
-    width: 19.5%;
-    margin: 0px 50px 0 50px;
+.categorie {
+    color: #e5e5e5e5;
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
-    line-height: 3;
-    color: black;
-    
-  }
+
+}
+
+ul li:hover {
+    background: rgb(37, 226, 163);
+    border-radius: 2px 2px;
+}
+
+.container {
+    margin: 0 50px 0 50px;
+    flex-wrap: wrap;
+}
+
+.portrait{
+    background-color: #1bd79e;
+    border-radius: 2px;
+}
