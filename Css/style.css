@@ -18,51 +18,50 @@ body {
     padding: 20px; /*ajouter un contour de 20 px autour de tout les elements de l'entête*/
   }
   
-  header h1 {                                 
-    font-family: 'Yeseva One', cursive; 
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-    font-weight: lighter;
+  header h1 {                                  
+    font-family: 'Yeseva One';        
+    text-align: center;          
+    color: white;             /* Affiche le texte de l'entête en police Yeseva One */
+    font-size: 1.5em;         /* taille de la police*/
   }
   
   header h1 span {
-    color: #1bd79e;
+    color: #1bd79e;     /* Uniquement l'élément dans l'entête en h1 et en span sera en vert */
   }
   
   header nav {
-    text-align: center;
+    text-align: center;     /* centre horizontalement les éléments dans l'entête nav */
   }
   
   header nav i {
-    margin: 1em 0.5em;
+    margin: 1em 0.5em;        
   }
   
   header nav a {
-    color: white;
+    color: white;        /* Emoji en blanc */
   }
 
   /* le main*/
   main {
     width: 90%;
-    margin: auto;
-    padding-top: 3em;
-    color: white;
+    margin: auto;          /* les éléments seront affiché sur 90% de la page en laissant 5% de bordure sur chaque coté*/    
+    padding-top: 3em;     /* Ajoute une zone 3em (em est une taille de police)*/
+    color: white;       /*couleur blanc*/
   }
   
   main h2 {
     font-family: 'Yeseva One';
-    font-size: 2em;
+    font-size: 2em;                  /* police d'ecriture Yesava One de taille 2em */
   }
   
   main span {
-    color: #1bd79e;
+    color: #1bd79e;     /* couleur en vertpour l'élément dans le main et dans le span */
   }
   
   main p {
     color: #808080;
-    margin: 20px 0px;
-    font-family: "Montserrat";
+    margin: 20px 0px;                /* espacement en haut et en bas */
+    font-family: "Montserrat";          /* paragraphe dans le main en gris en police Montserrat*/
   }
 
   /*les listes natures,portrait...*/
@@ -70,8 +69,8 @@ body {
     display: flex;
     justify-content: center; /* Centre les listes*/
     margin: 0 25%; /* Ajoute une marge de 25% de chaque côté */
-    margin-bottom: 20px;
-    font-family: "Montserrat";
+    margin-bottom: 20px;  /*  Espacement en haut */
+    font-family: "Montserrat"; 
 }
 
 main nav a {
@@ -79,11 +78,10 @@ main nav a {
     text-align: center; /* Centre le texte*/
 }
 
-/* Style commun pour tous les liens */
 main nav a span {
-    background-color: #1bd79e;
-    padding: 5px;
-    color: white;
+    background-color: #1bd79e;   /* les coutour de l'element main nav a span est en vert */
+    padding: 5px;           /* ajoute une zone de 5 px autour de l'element*/
+    color: white;   /* l'element est écrit en blanc */
 }
   
   
@@ -162,7 +160,7 @@ main nav a span {
   }
   
 /*Tablette */
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
 
   main h2,
   main p {
