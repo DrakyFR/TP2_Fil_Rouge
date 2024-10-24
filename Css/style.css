@@ -1,32 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-  
-  body {
-    --backgroundDark: #041821;
-    --primary: #1bd79e;
-    --colorParagraphe: #808080;
-    --secondary: #e5e5e5;
-    --texte: #ffffff;
-  }
-  
-  body {
+/* ===================== */
+/*    Style de la page   */
+/* ===================== */
+
+body {
     background-color: #041821;
   }
   
-  /* le header */
+/* ===================== */
+/*    Entête de la page  */
+/* ===================== */
+
   header {
-    border-bottom: 1px solid #808080;
+    display: flex; /* Utilise la format flex */
+    justify-content: space-between; /* spérarer par un vide les image et le texte */
+    align-items: center; /* Centrer verticalement */
+    border-bottom: 1px solid #808080; /*mettre une bordure griz en dessous de l'entête*/
+    padding: 20px; /*ajouter un contour de 20 px autour de tout les elements de l'entête*/
   }
   
-  header h1 {
-    font-family: 'Yeseva One';
+  header h1 {                                 
+    font-family: 'Yeseva One', cursive; 
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 1.5em;
+    font-weight: lighter;
   }
   
   header h1 span {
@@ -38,13 +35,13 @@
   }
   
   header nav i {
-    padding:;
+    margin: 1em 0.5em;
   }
   
   header nav a {
-    color: var(--texte);
+    color: white;
   }
-  
+
   /* le main*/
   main {
     width: 90%;
@@ -71,33 +68,37 @@
   /*les listes natures,portrait...*/
   main nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centre les listes*/
+    margin: 0 25%; /* Ajoute une marge de 25% de chaque côté */
     margin-bottom: 20px;
     font-family: "Montserrat";
-  }
-  
-  /*mettre unique le contoure en vert de portrait*/
-main nav a span{
+}
+
+main nav a {
+    margin: 0 10px; /* Ajoute de l'espace */
+    text-align: center; /* Centre le texte*/
+}
+
+/* Style commun pour tous les liens */
+main nav a span {
     background-color: #1bd79e;
     padding: 5px;
     color: white;
 }
-
   
   
   /* la. grille avec les images */
   .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes sur PC */
     grid-gap: 0.5em;
   }
   
   .grid img {
     width: 100%;
-    object-fit: cover;
   }
   
-  .grid img:nth-child(n + 10) {
+  .grid img:nth-child(n + 16) {
     display: none;
   }
   
@@ -116,3 +117,63 @@ main nav a span{
     font-size: 0.625em;
   }
   
+  /*Téléphone */
+  @media (max-width: 768px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+    }
+  
+    main {
+      width: 90%;
+      margin: auto;
+    }
+  
+    main h2 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 0.75em;
+    }
+  
+    main nav {
+      justify-content: center;
+      gap: 1em;
+    }
+  
+    main nav a {
+      font-size: 0.75em;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur téléphone */
+    }
+  
+    .grid img:nth-child(n + 9) {
+      display: block;
+    }
+  
+    main p {
+      width: 100%;
+    }
+  }
+  
+/*Tablette */
+@media screen and (min-width: 1024px) {
+
+  main h2,
+  main p {
+    width: 60%;
+  }
+
+  main nav button {
+    font-size: 1em;    
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);  /* 4 colonnes sur tablette */
+  }
+}
