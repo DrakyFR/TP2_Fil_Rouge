@@ -85,35 +85,31 @@ main nav a span {
 }
   
   
-  /* la. grille avec les images */
   .grid {
-    display: grid;
+    display: grid;                   /*affichage en grille*/                               
     grid-template-columns: repeat(5, 1fr); /* 5 colonnes sur PC */
-    grid-gap: 0.5em;
+    grid-gap: 0.5em;  /* Espacement entre les grille*/
   }
   
   .grid img {
-    width: 100%;
+    width: 100%;   /* Les image prends tout la largeur de la page */
   }
   
-  .grid img:nth-child(n + 16) {
-    display: none;
+  .grid img:nth-child(n + 16) {  /* 15 image son affiché */ 
+    display: none;     /* sans methode d'affichage */
   }
   
   footer {
-    text-align: center;
+    text-align: center;     /* centrer le texte dans footer en couleur gris*/
     color: #808080;
   }
   
-  /* l'entête en tête'. */
+  
   footer p {
-    margin: 20px 0px;
-    font-size: 0.75em;
+    margin: 20px 0px;     /* espacement vertical de 20 pixel */
+    font-size: 0.75em;      /* taille de police de 0.75em*/
   }
   
-  footer p:last-child {
-    font-size: 0.625em;
-  }
   
   /*Téléphone */
   @media (max-width: 768px) {
@@ -125,7 +121,7 @@ main nav a span {
     }
   
     main {
-      width: 90%;
+      width: 90%;     /* utilise 90% de la largeur de l'ecran sur téléphone */ 
       margin: auto;
     }
   
@@ -138,8 +134,8 @@ main nav a span {
     }
   
     main nav {
-      justify-content: center;
-      gap: 1em;
+      justify-content: center;          
+      gap: 1em;  /* espacement entre les grille*/
     }
   
     main nav a {
@@ -150,7 +146,7 @@ main nav a span {
       grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur téléphone */
     }
   
-    .grid img:nth-child(n + 9) {
+    .grid img:nth-child(n + 9) {   /*afficher 9 image */
       display: block;
     }
   
@@ -164,7 +160,7 @@ main nav a span {
 
   main h2,
   main p {
-    width: 60%;
+    width: 60%;     /*utilise 60% de l'ecran sur tablette */
   }
 
   main nav button {
