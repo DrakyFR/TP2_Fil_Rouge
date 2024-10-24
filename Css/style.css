@@ -1,66 +1,118 @@
-body {
-    background-color: #041821;  /* Mettre le fond de site en noir */
-    font-family: "Yeseva One";   /*Mettre la police Yeseva One sur tout les textes sauf si il le texte possède déjà un balise*/
-    margin: 0;             
-    padding: 0;            /*Mettre un ligne complète sur tout l'entête*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    --backgroundDark: #041821;
+    --primary: #1bd79e;
+    --colorParagraphe: #808080;
+    --secondary: #e5e5e5;
+    --texte: #ffffff;
+  }
+  
+  body {
+    background-color: #041821;
+  }
+  
+  /* le header */
+  header {
+    border-bottom: 1px solid #808080;
+  }
+  
+  header h1 {
+    font-family: 'Yeseva One';
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  }
+  
+  header h1 span {
+    color: #1bd79e;
+  }
+  
+  header nav {
+    text-align: center;
+  }
+  
+  header nav i {
+    padding:;
+  }
+  
+  header nav a {
+    color: var(--texte);
+  }
+  
+  /* le main*/
+  main {
+    width: 90%;
+    margin: auto;
+    padding-top: 3em;
+    color: white;
+  }
+  
+  main h2 {
+    font-family: 'Yeseva One';
+    font-size: 2em;
+  }
+  
+  main span {
+    color: #1bd79e;
+  }
+  
+  main p {
+    color: #808080;
+    margin: 20px 0px;
+    font-family: "Montserrat";
+  }
 
-}
-
-
-header {                                                      /*La balise de l'entête*/
-    border-bottom: 2px solid rgb(124, 126, 128);  
-    color: aliceblue;                               
+  /*les listes natures,portrait...*/
+  main nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-
-.ez{
-    color: #1bd79e;
-}
-
-h3 {
-    color: #e5e5e5e5;
-}
-
-
-h1 {
-    color: #e5e5e5e5;
-    margin: 0px 100px;
-}
-
-h5 {
-    color: #808080;
-    margin: 0px 100px;
+    margin-bottom: 20px;
     font-family: "Montserrat";
-}
-
-ul {
-    padding: 0;
-    width: 100%;
-    font-family: "Montserrat";
-}
-
-.categorie {
-    color: #e5e5e5e5;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-
-}
-
-ul li:hover {
-    background: rgb(37, 226, 163);
-    border-radius: 2px 2px;
-}
-
-.container {
-    margin: 0 50px 0 50px;
-    flex-wrap: wrap;
-}
-
-.portrait{
+  }
+  
+  /*mettre unique le contoure en vert de portrait*/
+main nav a span{
     background-color: #1bd79e;
-    border-radius: 2px;
+    padding: 5px;
+    color: white;
 }
+
+  
+  
+  /* la. grille avec les images */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5em;
+  }
+  
+  .grid img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .grid img:nth-child(n + 10) {
+    display: none;
+  }
+  
+  footer {
+    text-align: center;
+    color: #808080;
+  }
+  
+  /* l'entête en tête'. */
+  footer p {
+    margin: 20px 0px;
+    font-size: 0.75em;
+  }
+  
+  footer p:last-child {
+    font-size: 0.625em;
+  }
+  
