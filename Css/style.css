@@ -72,12 +72,13 @@ body {
     display: flex;
     justify-content: center; /* Centre les listes*/
     margin: 0 25%; /* Ajoute une marge de 25% de chaque côté */
-    margin-bottom: 20px;  /*  Espacement en haut */
+    margin-top: 2em;
+    margin-bottom: 2em;  /*  Espacement en haut */
     font-family: "Montserrat"; 
 }
 
 main nav a {
-    margin: 0 10px; /* Ajoute de l'espace */
+    margin: 0 5px; /* Ajoute de l'espace */
     text-align: center; /* Centre le texte*/
 }
 
@@ -127,10 +128,11 @@ main nav a span {
 
   @media (max-width: 768px) {
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: block;
+      align-items: center;      /* Changer la forme de l'entête sur téléphone */
+      margin: 0;
       padding: 1em;
+      
     }
   
     main {
@@ -148,11 +150,7 @@ main nav a span {
   
     main nav {
       justify-content: center;          
-      gap: 1em;  /* espacement entre les grille*/
-    }
-  
-    main nav a {
-      font-size: 0.75em;
+      gap: 0.1em;  /* espacement entre les grille*/
     }
   
     .grid {
@@ -166,6 +164,13 @@ main nav a span {
     main p {
       width: 100%;
     }
+
+    main nav a{
+      width: 60%;
+      font-size: 0.6em;
+      padding: 0;
+    }
+
   }
   
 
@@ -180,7 +185,7 @@ main nav a span {
     width: 60%;     /*utilise 60% de l'ecran sur tablette */
   }
 
-  main nav button {
+  main nav a {
     font-size: 1em;    
   }
 
