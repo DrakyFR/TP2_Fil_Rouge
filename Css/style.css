@@ -41,7 +41,10 @@ body {
     color: white;        /* Emoji en blanc */
   }
 
-  /* le main*/
+/* ===================================== */
+/*    les éléments au milieu de la page  */
+/* ===================================== */
+
   main {
     width: 90%;
     margin: auto;          /* les éléments seront affiché sur 90% de la page en laissant 5% de bordure sur chaque coté*/    
@@ -84,6 +87,10 @@ main nav a span {
     color: white;   /* l'element est écrit en blanc */
 }
   
+
+/* ================================= */
+/*  La grille qui dispose les image  */
+/* ================================= */
   
   .grid {
     display: grid;                   /*affichage en grille*/                               
@@ -99,6 +106,10 @@ main nav a span {
     display: none;     /* sans methode d'affichage */
   }
   
+/* ===================== */
+/*    bas de la page     */
+/* ===================== */
+
   footer {
     text-align: center;     /* centrer le texte dans footer en couleur gris*/
     color: #808080;
@@ -109,9 +120,11 @@ main nav a span {
     margin: 20px 0px;     /* espacement vertical de 20 pixel */
     font-size: 0.75em;      /* taille de police de 0.75em*/
   }
-  
-  
-  /*Téléphone */
+
+/* ===================== */
+/*      Telephone        */
+/* ===================== */
+
   @media (max-width: 768px) {
     header {
       display: flex;
@@ -155,7 +168,11 @@ main nav a span {
     }
   }
   
-/*Tablette */
+
+/* ===================== */
+/*      Tablette         */
+/* ===================== */
+
 @media (min-width: 1024px) {
 
   main h2,
